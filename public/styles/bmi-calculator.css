@@ -1,0 +1,47 @@
+/* BMI Calculator */
+.bmi-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.bmi-form {
+    background: var(--white-color);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.bmi-info {
+    margin-top: 2rem;
+}
+
+.bmi-btn {
+    width: 100%;
+    background: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+.bmi-btn:hover {
+    background: #3BAFA8;
+}
+
+.bmi-categories {
+    list-style: none;
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.bmi-categories li {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.bmi-categories .underweight { background: #f8f9fa; }
+.bmi-categories .normal { background: #e3fcef; }
+.bmi-categories .overweight { background: #fff3e0; }
+.bmi-categories .obese { background: #ffeef0; }

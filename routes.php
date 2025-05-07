@@ -13,9 +13,10 @@ if (file_exists($requestedFile) && is_file($requestedFile)) {
 
 // Routing
 switch ($request) {
-    case '/':
     case '':
-        require "$publicPath/index.html";
+    case '/':
+    case '/home':
+        require "$publicPath/index.php";
         break;
 
     case '/about':
@@ -23,11 +24,15 @@ switch ($request) {
         break;
 
     case '/contact':
-        require "$publicPath/contact.html";
+        require "$publicPath/contact.php";
+        break;
+
+    case '/services':
+        require "$publicPath/services.php";
         break;
 
     case '/bmi-calculator':
-        require "$publicPath/bmi-calculator.html";
+        require "$publicPath/bmi-calculator.php";
         break;
 
     default:

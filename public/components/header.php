@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/styles/header.css">
+
 <header class="header">
     <nav class="navbar container">
         <a href="" class="logo">Royal<span>Fitness</span></a>

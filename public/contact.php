@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<?php include 'components/header.php'?>
+    <?php include 'components/header.php'?>
 
     <!-- Contact Section -->
     <section class="contact section" id="contact">

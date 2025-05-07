@@ -14,7 +14,6 @@ if (file_exists($requestedFile) && is_file($requestedFile)) {
 // Routing
 switch ($request) {
     case '':
-    case '/':
     case '/home':
         require "$publicPath/index.php";
         break;

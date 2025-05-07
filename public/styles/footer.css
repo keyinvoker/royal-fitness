@@ -2,6 +2,7 @@ footer {
     left: 0;
     bottom: 0;
     background: var(--dark-color);
+    margin-top: 30px;
 }
 
 .contact-info {

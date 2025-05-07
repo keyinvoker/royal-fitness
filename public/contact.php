@@ -17,7 +17,6 @@
 <body>
     <?php include 'components/header.php'?>
 
-    <!-- Contact Section -->
     <section class="contact section" id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>

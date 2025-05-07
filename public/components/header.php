@@ -2,12 +2,12 @@
 
 <header class="header">
     <nav class="navbar container">
-        <a href="" class="logo">Royal<span>Fitness</span></a>
+        <a href="" class="brand">Royal<span>Fitness</span></a>
 
         <div class="nav-menu" id="nav-menu">
             <ul class="nav-list">
                 <li class="nav-item bi-house-door-fill">
-                    <a href="/home" class="nav-link">Home</a>
+                    <a href="" class="nav-link">Home</a>
                 </li>
 
                 <li class="nav-item bi-person-arms-up">

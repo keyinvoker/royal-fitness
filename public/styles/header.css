@@ -15,14 +15,14 @@
     align-items: center;
 }
 
-.logo {
+.brand {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 700px;
     color: var(--dark-color);
     text-decoration: none;
 }
 
-.logo span {
+.brand span {
     color: var(--primary-color);
 }
 

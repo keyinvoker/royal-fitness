@@ -49,3 +49,9 @@
     height: 100%;
     border: none;
 }
+
+@media (max-width: 768px) {
+    .exercise-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -45,3 +45,9 @@
 .bmi-categories .normal { background: #e3fcef; }
 .bmi-categories .overweight { background: #fff3e0; }
 .bmi-categories .obese { background: #ffeef0; }
+
+@media (max-width: 768px) {
+    .bmi-container {
+        grid-template-columns: 1fr;
+    }
+}

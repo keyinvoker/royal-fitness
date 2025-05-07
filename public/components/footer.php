@@ -29,6 +29,6 @@
     </div>
 
     <div class="copyright">
-        <p>Copyright 2025 &copy; Royal Fitness. All rights reserved.</p>
+        <p>Copyright 2025 &copy; FitMetric. All rights reserved.</p>
     </div>
 </footer>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/globals.css">
     <link rel="stylesheet" href="/styles/exercises.css">
 
-    <title>Royal Fitness | Transform Your Body</title>
+    <title>FitMetric | Transform Your Body</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
 </head>
 

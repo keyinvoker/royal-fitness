@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/globals.css">
     <link rel="stylesheet" href="/styles/bmi-calculator.css">
 
-    <title>Royal Fitness | BMI Calculator</title>
+    <title>FitMetric | BMI Calculator</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
 </head>
 

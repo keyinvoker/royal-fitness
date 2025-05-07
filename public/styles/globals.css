@@ -81,7 +81,6 @@ body {
     display: flex;
     align-items: center;
     color: var(--white-color);
-    margin-top: 80px;
 }
 
 .hero-content {

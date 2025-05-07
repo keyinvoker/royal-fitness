@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/globals.css">
     <link rel="stylesheet" href="/styles/contact.css">
 
-    <title>Royal Fitness | Contact Us</title>
+    <title>FitMetric | Contact Us</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
 </head>
 

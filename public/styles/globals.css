@@ -5,7 +5,7 @@
     --accent-color: #FFE66D;
     --dark-color: #2D3436;
     --text-color: #636E72;
-    --light-bg: #F9F9F9;
+    --light-bg: #F5F5F5;
     --white-color: #FFFFFF;
     --transition: all 0.3s ease;
 }
@@ -30,7 +30,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -73,8 +74,8 @@ body {
 /* Hero Section */
 .hero {
     background:
-        linear-gradient(rgba(45,52,54,0.8),
-        rgba(45,52,54,0.8)),
+        linear-gradient(rgba(45, 52, 54, 0.8),
+        rgba(45, 52, 54, 0.8)),
         url('../assets/images/hero-bg.jpg') center/cover fixed;
     min-height: 100vh;
     display: flex;
@@ -140,50 +141,9 @@ body {
     outline: none;
 }
 
-/* Contact Section */
-.contact-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-}
-
-.contact-form {
-    background: var(--white-color);
-    padding: 2.5rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.contact-info {
-    background: var(--white-color);
-    padding: 2.5rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 8px;
-    transition: var(--transition);
-}
-
-.info-item:hover {
-    background: var(--light-bg);
-}
-
-.info-item i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(255,107,107,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+textarea {
+    width: 100%;
+    max-width: 100%;
 }
 
 /* Responsive Design */

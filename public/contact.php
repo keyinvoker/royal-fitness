@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/contact.css">
 
     <title>Royal Fitness | Contact Us</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
@@ -23,42 +24,21 @@
             <div class="contact-container grid">
                 <form id="contact-form" class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Full Name" class="form-input" required>
+                        <input type="text" placeholder="Full Name" class="contact-form-input" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Email Address" class="form-input" required>
+                        <input type="email" placeholder="Email" class="contact-form-input" required>
                     </div>
                     <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" class="form-input" required></textarea>
+                        <textarea rows="5" placeholder="What would like to say?" class="contact-form-input" required></textarea>
                     </div>
                     <button type="submit" class="btn contact-btn">Send Message</button>
                 </form>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Our Location</h4>
-                            <p>88 Fitness Street, Gym City</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>Call Us</h4>
-                            <p>+86 15658089185</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p>info@fitmetric.com</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+
+    <?php include 'components/footer.php' ?>
 </body>
 </html>
 

@@ -18,21 +18,22 @@
 <body>
     <?php include 'components/header.php'?>
 
-    <!-- Exercise Finder Section -->
-    <section class="exercises section" id="exercises">
-            <div class="container">
-                <h2 class="section-title">Exercise Programs</h2>
-                <div class="exercise-filter">
-                    <select id="goal-select" class="exercise-filter-select">
-                        <option value="lean">Lean Muscle</option>
-                        <option value="bulk">Bulking</option>
-                        <option value="strength">Strength</option>
-                        <option value="endurance">Endurance</option>
-                    </select>
-                </div>
-                <div class="exercise-grid grid" id="exercise-container"></div>
+    <section class="exercises" id="exercises">
+        <div class="container">
+            <h2 class="section-title">Exercise Programs</h2>
+            <div class="exercise-filter">
+                <select id="goal-select" class="exercise-filter-select">
+                    <option value="lean">Lean Muscle</option>
+                    <option value="bulk">Bulking</option>
+                    <option value="strength">Strength</option>
+                    <option value="endurance">Endurance</option>
+                </select>
             </div>
-        </section>
+            <div class="exercise-grid grid" id="exercise-container"></div>
+        </div>
+    </section>
+
+    <?php include 'components/footer.php' ?>
 </body>
 </html>
 

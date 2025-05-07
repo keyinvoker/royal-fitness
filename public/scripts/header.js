@@ -1,19 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Navigation
-    const navToggle = document.getElementById('nav-toggle');
+    // Nav Toggles
     const navMenu = document.getElementById('nav-menu');
+    const navToggle = document.getElementById('nav-toggle');
     const navClose = document.getElementById('nav-close');
 
-    // Toggle Mobile Menu
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    });
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
 
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
+    if (navClose) {
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    }
 
     // Close menu on outside click
     document.addEventListener('click', (e) => {

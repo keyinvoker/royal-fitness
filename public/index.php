@@ -17,8 +17,7 @@
 <body>
     <?php include 'components/header.php'?>
 
-    <!-- Hero Section -->
-    <section class="hero section" id="home">
+    <section class="hero" id="home">
         <div class="hero-container container grid">
             <div class="hero-content">
                 <h1 class="hero-title">Transform Your Body</h1>
@@ -30,5 +29,7 @@
             </div>
         </div>
     </section>
+
+    <?php include 'components/footer.php' ?>
 </body>
 </html>

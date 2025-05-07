@@ -27,16 +27,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link cta-button">Join Now</a>
+                    <a href="/contact" class="nav-link cta-button">Join Now</a>
                 </li>
             </ul>
-            <div class="nav-close" id="nav-close">
+            <!-- <div class="nav-close" id="nav-close">
                 <i class="fa fa-times"></i>
-            </div>
+            </div> -->
         </div>
-        <div class="nav-toggle" id="nav-toggle">
+        <!-- <div class="nav-toggle" id="nav-toggle">
             <i class="fa fa-bars"></i>
-        </div>
+        </div> -->
     </nav>
 </header>
 

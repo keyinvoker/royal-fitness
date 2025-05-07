@@ -1,0 +1,51 @@
+footer {
+    left: 0;
+    bottom: 0;
+    background: var(--dark-color);
+}
+
+.contact-info {
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.contact-info:hover {
+    color: var(--primary-color);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: var(--transition);
+    color: white;
+}
+
+.contact-info-item:hover {
+    background: var(--light-bg);
+    color: var(--primary-color);
+}
+
+.contact-info-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255,107,107,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding: 5px;
+}

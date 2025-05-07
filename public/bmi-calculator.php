@@ -18,7 +18,7 @@
 <body>
     <?php include 'components/header.php'?>
 
-    <section class="bmi section" id="bmi">
+    <section class="bmi" id="bmi">
         <div class="container">
             <h2 class="section-title">BMI Calculator</h2>
             <div class="bmi-container grid">
@@ -62,6 +62,8 @@
             </div>
         </div>
     </section>
+
+    <?php include 'components/footer.php' ?>
 </body>
 
 <script src="/scripts/bmi-calculator.js"></script>

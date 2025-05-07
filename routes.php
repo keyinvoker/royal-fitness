@@ -30,8 +30,12 @@ switch ($request) {
         require "$publicPath/services.php";
         break;
 
-    case '/bmi-calculator':
+    case '/services/bmi-calculator':
         require "$publicPath/bmi-calculator.php";
+        break;
+
+    case '/services/exercises':
+        require "$publicPath/exercises.php";
         break;
 
     default:

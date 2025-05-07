@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/globals.css">
 
-    <title>Royal Fitness | Transform Your Body</title>
+    <title>Royal Fitness | Contact Us</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
 </head>
 
@@ -63,4 +63,4 @@
 </body>
 </html>
 
-<script src="/scripts/script.js"></script>
+<script src="/scripts/contact.js"></script>

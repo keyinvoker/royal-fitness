@@ -1,0 +1,51 @@
+.exercise-filter {
+    max-width: 400px;
+    margin: 0 auto 3rem;
+}
+
+.exercise-filter-select {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--white-color);
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.exercise-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.exercise-card {
+    background: var(--white-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.exercise-card:hover {
+    transform: translateY(-5px);
+}
+
+.exercise-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.exercise-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

@@ -1,4 +1,26 @@
-// BMI Calculator with Visual Meter
+const bmiCategoryMap = {
+    'underweight': {
+        'category': 'Underweight',
+        'color': '#4ECDC4',
+        'width': '25%',
+    },
+    'normal': {
+        'category': 'Normal',
+        'color': '#2ecc71',
+        'width': '50%',
+    },
+    'overweight': {
+        'category': 'Overweight',
+        'color': '#f1c40f',
+        'width': '75%',
+    },
+    'obese': {
+        'category': 'Obese',
+        'color': '#e74c3c',
+        'width': '100%',
+    },
+};
+
 function calculateBMI() {
     const height = document.getElementById('height').value / 100;
     const weight = document.getElementById('weight').value;
@@ -14,30 +36,19 @@ function calculateBMI() {
     }
 
     const bmi = weight / (height * height);
-    let category = '';
-    let color = '';
-    let width = 0;
 
-    if (bmi < 18.5) {
-        category = 'Underweight';
-        color = '#4ECDC4';
-        width = '25%';
-    } else if (bmi < 24.9) {
-        category = 'Normal';
-        color = '#2ecc71';
-        width = '50%';
-    } else if (bmi < 29.9) {
-        category = 'Overweight';
-        color = '#f1c40f';
-        width = '75%';
-    } else {
-        category = 'Obese';
-        color = '#e74c3c';
-        width = '100%';
-    }
+    if (bmi < 18.5) {bmiData = bmiCategoryMap['underweight'];}
+    else if (bmi < 24.9) {bmiData = bmiCategoryMap['normal'];}
+    else if (bmi < 29.9) {bmiData = bmiCategoryMap['overweight'];}
+    else {bmiData = bmiCategoryMap['obese'];}
+
+    let category = bmiData?.category ?? '';
+    let width = bmiData?.width ?? 0;
+    let color = bmiData?.color ?? '';
 
     meter.style.width = width;
     meter.style.backgroundColor = color;
+
     infoText.innerHTML = `
         <h3>BMI: ${bmi.toFixed(1)}</h3>
         <p>Category: <strong style="color: ${color}">${category}</strong></p>

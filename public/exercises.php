@@ -1,3 +1,15 @@
+<?php
+require_once __DIR__ . '/../App/Controllers/ExerciseController.php';
+require_once __DIR__ . '/../App/Database/MySQL.php';
+require_once __DIR__ . '/../App/Repositories/ExerciseRepository.php';
+
+$conn = \App\Database\MySQL::getDbConnection();
+$repo = new \App\Repositories\ExerciseRepository($conn);
+$controller = new \App\Controllers\ExerciseController($repo);
+
+$exercises = $controller->getExerciseList();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,23 +30,46 @@
 <body>
     <?php include 'components/header.php'?>
 
-    <section class="exercises" id="exercises">
-        <div class="container">
-            <h2 class="section-title">Exercise Programs</h2>
-            <div class="exercise-filter">
-                <select id="goal-select" class="exercise-filter-select">
-                    <option value="lean">Lean Muscle</option>
-                    <option value="bulk">Bulking</option>
-                    <option value="strength">Strength</option>
-                    <option value="endurance">Endurance</option>
-                </select>
+    <main>
+        <section class="exercises" id="exercises">
+            <div class="container">
+                <h2 class="section-title">Exercise Programs</h2>
+                <!-- <div class="exercise-filter">
+                    <select id="goal-select" class="exercise-filter-select">
+                        <option value="lean">Lean Muscle</option>
+                        <option value="bulk">Bulking</option>
+                        <option value="strength">Strength</option>
+                        <option value="endurance">Endurance</option>
+                    </select>
+                </div> -->
+
+                <div class="exercise-grid grid" id="exercise-container">
+                    <?php foreach ($exercises as $exercise): ?>
+                        <div class="exercise-card">
+                            <div class="exercise-header">
+                                <h3><?= htmlspecialchars($exercise['name']) ?></h3>
+                                <div class="exercise-meta">
+                                    <span><?= htmlspecialchars($exercise['duration_minutes']) ?></span>
+                                    <span><?= htmlspecialchars($exercise['equipment']) ?></span>
+                                </div>
+                            </div>
+                            <p class="exercise-desc"><?= htmlspecialchars($exercise['description']) ?></p>
+                            <div class="exercise-video-container">
+                                <iframe src=<?= htmlspecialchars($exercise['video_url']) ?>
+                                        loading="lazy"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
             </div>
-            <div class="exercise-grid grid" id="exercise-container"></div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <?php include 'components/footer.php' ?>
 </body>
 </html>
 
-<script src='/scripts/exercises.js'></script>
+<!-- <script src='/scripts/exercises.js'></script> -->

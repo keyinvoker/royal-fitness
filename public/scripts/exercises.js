@@ -1,4 +1,4 @@
-// Exercise Programs Data
+// TODO: Refactor into using DB table to fetch data
 const exercisePrograms = {
     lean: [
         {

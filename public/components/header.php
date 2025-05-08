@@ -15,15 +15,15 @@
                 </li>
 
                 <li class="nav-item bi-info-circle-fill">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="/about" class="nav-link">About</a>
                 </li>
 
                 <li class="nav-item bi-currency-dollar">
-                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="/pricing" class="nav-link">Pricing</a>
                 </li>
 
                 <li class="nav-item bi-book">
-                    <a href="#testimonials" class="nav-link">Reviews</a>
+                    <a href="/testimonials" class="nav-link">Reviews</a>
                 </li>
 
                 <li class="nav-item">

@@ -1,14 +1,13 @@
 /* Contact Section */
 .contact {
     background:
-    linear-gradient(rgba(45,52,54,0.8),
-    rgba(45,52,54,0.8)),
-    url('../assets/images/contact-us-banner.jpg') center/cover fixed;
+        linear-gradient(rgba(45,52,54,0.8),
+        rgba(45,52,54,0.8)),
+        url('../assets/images/contact-us-banner.jpg') center/cover fixed;
     min-height: 100vh;
     display: flex;
     align-items: center;
     color: var(--white-color);
-    margin-top: 80px;
 }
 
 .contact-container {

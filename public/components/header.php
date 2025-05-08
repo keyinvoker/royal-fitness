@@ -16,8 +16,8 @@
                         <li><a href="/services/bmi-calculator" class="dropdown-link">
                             BMI Calculator
                         </a></li>
-                        <li><a href="/services/training" class="dropdown-link">
-                            Training
+                        <li><a href="/services/exercises" class="dropdown-link">
+                            Exercises
                         </a></li>
                     </ul>
                 </li>

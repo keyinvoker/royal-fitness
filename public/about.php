@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Fitness Center - Professional Training & State-of-the-art Facilities">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/globals.css">
+
+    <title>FitMetric | About Us</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+</head>
+
+<body>
+    <?php include 'components/header.php'?>
+
+    <section>
+        <h1 class="section-title">
+            About <span class="brand">Fit<span>Metric</span></span>
+        </h1>
+    </section>
+
+    <?php include 'components/footer.php'?>
+</body>

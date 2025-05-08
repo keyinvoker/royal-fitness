@@ -29,15 +29,18 @@ body {
     background-color: var(--light-bg);
 }
 
+main {
+    margin-top: 5em;
+}
+
 .container {
-    /* max-width: 1200px; */
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
 .section {
-    padding: 6rem 0;
+    padding: 6rem 10em;
 }
 
 .section-title {
@@ -59,6 +62,10 @@ body {
     background-color: var(--primary-color);
 }
 
+.grid {
+    display: grid;
+}
+
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -69,57 +76,6 @@ body {
     transition: var(--transition);
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-/* Hero Section */
-.hero {
-    background:
-        linear-gradient(rgba(45, 52, 54, 0.8),
-        rgba(45, 52, 54, 0.8)),
-        url('../assets/images/hero-bg.jpg') center/cover fixed;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    color: var(--white-color);
-}
-
-.hero-content {
-    max-width: 800px;
-    text-align: center;
-}
-
-.hero-title {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-}
-
-.hero-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2.5rem;
-    font-weight: 300;
-}
-
-.hero-cta {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.hero-btn {
-    background: var(--primary-color);
-    color: var(--white-color);
-}
-
-.hero-btn-outline {
-    background: transparent;
-    border: 2px solid var(--white-color);
-    color: var(--white-color);
-}
-
-.hero-btn-outline:hover {
-    background: var(--white-color);
-    color: var(--white-color);
 }
 
 .form-group {
@@ -145,18 +101,7 @@ textarea {
     max-width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-}
-
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
     .section-title {
         font-size: 2rem;
     }

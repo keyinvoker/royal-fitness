@@ -1,14 +1,23 @@
 footer {
-    left: 0;
-    bottom: 0;
     background: var(--dark-color);
+    /* background: radial-gradient(circle at center, var(--dark-color), #780909); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .contact-info {
     padding: 2.5rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
     transition: var(--transition);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    /* background: linear-gradient(45deg, #630909, #ab1818, #630909); */
+    /* background: radial-gradient(circle at center, #9c1616, #780909); */
 }
 
 .contact-info:hover {
@@ -23,7 +32,7 @@ footer {
     padding: 1.5rem;
     border-radius: 8px;
     transition: var(--transition);
-    color: white;
+    color: whitesmoke;
 }
 
 .contact-info-item:hover {

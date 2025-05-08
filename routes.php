@@ -19,7 +19,7 @@ switch ($request) {
         break;
 
     case '/about':
-        require "$publicPath/about.html";
+        require "$publicPath/about.php";
         break;
 
     case '/contact':

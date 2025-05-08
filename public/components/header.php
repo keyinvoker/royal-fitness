@@ -10,8 +10,16 @@
                     <a href="/" class="nav-link">Home</a>
                 </li>
 
-                <li class="nav-item bi-person-arms-up">
-                    <a href="/services" class="nav-link">Services</a>
+                <li class="nav-item dropdown bi-person-arms-up">
+                    <a href="#" class="nav-link">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/services/bmi-calculator" class="dropdown-link">
+                            BMI Calculator
+                        </a></li>
+                        <li><a href="/services/training" class="dropdown-link">
+                            Training
+                        </a></li>
+                    </ul>
                 </li>
 
                 <li class="nav-item bi-info-circle-fill">
@@ -26,7 +34,7 @@
                     <a href="/testimonials" class="nav-link">Reviews</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="">
                     <a href="/contact" class="nav-link cta-button">Join Now</a>
                 </li>
             </ul>

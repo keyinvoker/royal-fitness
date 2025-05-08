@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/index.css">
 
     <title>FitMetric | Transform Your Body</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
@@ -17,18 +18,20 @@
 <body>
     <?php include 'components/header.php'?>
 
-    <section class="hero" id="home">
-        <div class="hero-container container grid">
-            <div class="hero-content">
-                <h1 class="hero-title">Transform Your Body</h1>
-                <p class="hero-subtitle">Experience world-class training in our premium facilities</p>
-                <div class="hero-cta">
-                    <a href="#pricing" class="btn hero-btn">Get Started</a>
-                    <a href="#about" class="btn hero-btn-outline">Learn More</a>
+    <main>
+        <section class="hero">
+            <div class="hero-container grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">Transform Your Body</h1>
+                    <p class="hero-subtitle">Experience world-class training in our premium facilities</p>
+                    <div class="hero-cta">
+                        <a href="#pricing" class="btn hero-btn">Get Started</a>
+                        <a href="#about" class="btn hero-btn-outline">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <?php include 'components/footer.php' ?>
 </body>

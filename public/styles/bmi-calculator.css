@@ -33,6 +33,10 @@
     margin-top: 3rem;
 }
 
+.bmi-info h3 {
+    color: var(--dark-color);
+}
+
 .bmi-btn {
     width: 40%;
     background: var(--secondary-color);

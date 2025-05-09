@@ -29,3 +29,113 @@
     text-decoration-thickness: 2px;
     text-decoration-color: var(--primary-color-dark);
 }
+
+
+.trainers-text-white {
+    color: white !important;
+}
+
+.trainers-text-center {
+    text-align: center !important;
+}
+
+.trainers-py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.trainers-container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .trainers-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .trainers-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .trainers-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .trainers-container {
+        max-width: 1320px;
+    }
+}
+
+.trainers-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.trainers-row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.trainers-g-4,
+.trainers-row > .trainers-g-4 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}
+
+.trainers-justify-content-center {
+    justify-content: center !important;
+}
+
+.trainers-col-md-4 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .trainers-col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+.trainers-img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.trainers-w-100 {
+    width: 100% !important;
+}
+
+.trainers-fw-bold {
+    font-weight: 700 !important;
+}
+
+.trainers-mt-3 {
+    margin-top: 1rem !important;
+}
+
+.trainers-mb-1 {
+    margin-bottom: 0.25rem !important;
+}
+
+.trainers-text-secondary {
+    color: #6c757d !important;
+}

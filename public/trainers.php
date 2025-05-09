@@ -6,7 +6,6 @@
   <meta name="description" content="Premium Fitness Center - Professional Training & State-of-the-art Facilities">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/styles/globals.css">
   <link rel="stylesheet" href="/styles/trainers.css">
 
@@ -18,8 +17,8 @@
     <?php include 'components/header.php'?>
 
     <main>
-        <section class="trainers-section text-white text-center py-5">
-            <div class="container">
+        <section class="trainers-section trainers-text-white trainers-text-center trainers-py-5">
+            <div class="trainers-container">
                 <h2 class="trainers-title">
                     OUR <span>TRAINERS</span>
                 </h2>
@@ -29,34 +28,34 @@
                     Only with the best of the best.
                 </p>
 
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-4">
+                <div class="trainers-row trainers-g-4 trainers-justify-content-center">
+                    <div class="trainers-col-md-4">
                         <div class="trainer-card">
                             <a href="https://www.instagram.com/gian_bowi" target="_blank" class="trainer-card-link">
-                                <img src="/assets/images/trainers/gian-bowi.png" alt="Gian Bowi" class="img-fluid w-100">
+                                <img src="/assets/images/trainers/gian-bowi.png" alt="Gian Bowi" class="trainers-img-fluid trainers-w-100">
                             </a>
-                            <h5 class="fw-bold mt-3 mb-1 trainer-name">Gian Bowi</h5>
-                            <p class="text-secondary">Men Trainer</p>
+                            <h5 class="fw-bold mt-3 mb-1 trainer-name trainers-fw-bold trainers-mt-3 trainers-mb-1">Gian Bowi</h5>
+                            <p class="text-secondary trainers-text-secondary">Men Trainer</p>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="trainers-col-md-4">
                         <div class="trainer-card">
                             <a href="https://www.instagram.com/ryanshndra" target="_blank" class="trainer-card-link">
-                                <img src="/assets/images/trainers/ryanshndra.jpg" alt="ryanshndra" class="img-fluid w-100">
+                                <img src="/assets/images/trainers/ryanshndra.jpg" alt="ryanshndra" class="trainers-img-fluid trainers-w-100">
                             </a>
-                            <h5 class="fw-bold mt-3 mb-1 trainer-name">ryanshndra</h5>
-                            <p class="text-secondary">Best Seller</p>
+                            <h5 class="fw-bold mt-3 mb-1 trainer-name trainers-fw-bold trainers-mt-3 trainers-mb-1">ryanshndra</h5>
+                            <p class="text-secondary trainers-text-secondary">Best Seller</p>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="trainers-col-md-4">
                         <div class="trainer-card">
                             <a href="https://www.instagram.com/zeusidon_" target="_blank" class="trainer-card-link">
-                                <img src="/assets/images/trainers/zeusidon.jpg" alt="Zeusidon" class="img-fluid w-100">
+                                <img src="/assets/images/trainers/zeusidon.jpg" alt="Zeusidon" class="trainers-img-fluid trainers-w-100">
                             </a>
-                            <h5 class="fw-bold mt-3 mb-1 trainer-name">Zeusidon</h5>
-                            <p class="text-secondary">Men Trainer</p>
+                            <h5 class="fw-bold mt-3 mb-1 trainer-name trainers-fw-bold trainers-mt-3 trainers-mb-1">Zeusidon</h5>
+                            <p class="text-secondary trainers-text-secondary">Men Trainer</p>
                         </div>
                     </div>
                 </div>

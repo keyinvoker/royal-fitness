@@ -10,7 +10,7 @@ footer {
     padding-right: 1em;
 }
 
-.contact-info {
+.footer-contact-info {
     padding: 2.5rem;
     border-radius: 15px;
     /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
@@ -20,11 +20,11 @@ footer {
     /* background: radial-gradient(circle at center, #9c1616, #780909); */
 }
 
-.contact-info:hover {
+.footer-contact-info:hover {
     color: var(--primary-color);
 }
 
-.contact-info-item {
+.footer-contact-info-item {
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -35,12 +35,12 @@ footer {
     color: whitesmoke;
 }
 
-.contact-info-item:hover {
+.footer-contact-info-item:hover {
     background: var(--light-bg);
     color: var(--primary-color);
 }
 
-.contact-info-item i {
+.footer-contact-info-item i {
     font-size: 1.5rem;
     color: var(--primary-color);
     width: 50px;

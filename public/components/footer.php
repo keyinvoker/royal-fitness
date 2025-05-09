@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="/styles/footer.css">
 
 <footer>
-    <div class="contact-grid">
-        <div class="contact-info">
-            <div class="contact-info-item">
+    <div class="container">
+        <div class="footer-contact-info">
+            <div class="footer-contact-info-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
                     <h4>Our Location</h4>
@@ -11,7 +11,7 @@
                 </div>
             </div>
             
-            <div class="contact-info-item">
+            <div class="footer-contact-info-item">
                 <i class="fas fa-phone-alt"></i>
                 <div>
                     <h4>Call Us</h4>
@@ -19,7 +19,7 @@
                 </div>
             </div>
             
-            <div class="contact-info-item">
+            <div class="footer-contact-info-item">
                 <i class="fas fa-envelope"></i>
                 <div>
                     <h4>Email Us</h4>
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <!-- <img src="/assets/images/bodybuilding-illustration.jpg" alt="" class="contact-info-"> -->
+        <!-- <img src="/assets/images/bodybuilding-illustration.jpg" alt="" class="footer-contact-info-"> -->
         <!-- <a href="https://www.freepik.com/free-photo/bodybuilding-sport-activity-3d-line-art-drawing_21128089.htm">Image by Rochak Shukla on Freepik</a> -->
     </div>
 

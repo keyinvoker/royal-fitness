@@ -21,8 +21,8 @@
     <section class="contact section" id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container grid">
-                <form id="contact-form" class="contact-form">
+            <div class="contact-container">
+                <form class="contact-form">
                     <div class="form-group">
                         <input type="text" placeholder="Full Name" class="contact-form-input" required>
                     </div>

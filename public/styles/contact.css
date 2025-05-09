@@ -11,15 +11,17 @@
 }
 
 .contact-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-form {
-    background: rgba(235, 235, 235, 0.3);
+    background: rgba(235, 235, 235, 0.4);
     padding: 2.5rem;
-    border-radius: 15px;
+    border-radius: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 80%;
 }
 
 .contact-form-input {
@@ -48,6 +50,16 @@
 
 .contact .section-title {
     color: whitesmoke;
+}
+
+.contact-btn {
+    transition: var(--transition);
+}
+
+.contact-btn:hover {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 768px) {

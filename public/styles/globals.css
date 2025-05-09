@@ -7,6 +7,9 @@
     --text-color: #636E72;
     --light-bg: #F5F5F5;
     --white-color: #FFFFFF;
+    --text-color: #fff;
+    --muted-color: #666;
+    --card-bg: #1a1a1a;
     --transition: all 0.3s ease;
 }
 
@@ -31,10 +34,12 @@ body {
 
 main {
     margin-top: 5em;
+    min-height: 80vh;
 }
 
 .container {
     max-width: 100%;
+    min-width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
 }

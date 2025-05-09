@@ -1,0 +1,100 @@
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.pricing-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: black;
+    min-height: 80vh;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .title .highlight {
+    color: var(--primary-color);
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: whitesmoke;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-style: italic;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    border: 2px solid transparent;
+    padding: 30px 20px;
+    width: 280px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card.featured {
+    border-color: var(--primary-color);
+  }
+  
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .card .price {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 20px;
+  }
+  
+  .card .price span {
+    font-size: 1rem;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+  .card ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .card ul .disabled {
+    color: var(--muted-color);
+  }
+  
+  .btn {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: block;
+    margin-top: auto;
+  }

@@ -1,3 +1,51 @@
+# Project Tree
+```
+royal-fitness
+├─ README.md
+├─ app
+│  ├─ Controllers
+│  │  └─ ExerciseController.php
+│  ├─ Database
+│  │  └─ MySQL.php
+│  ├─ Models
+│  │  └─ Exercise.php
+│  └─ Repositories
+│     └─ ExerciseRepository.php
+├─ public
+│  ├─ about.php
+│  ├─ assets
+│  │  └─ images
+│  │     ├─ about-us-illustration.jpg
+│  │     ├─ bodybuilding-illustration.jpg
+│  │     ├─ contact-us-banner.jpg
+│  │     ├─ hero-bg.jpg
+│  │     └─ logo.png
+│  ├─ bmi-calculator.php
+│  ├─ components
+│  │  ├─ footer.php
+│  │  └─ header.php
+│  ├─ contact.php
+│  ├─ exercises.php
+│  ├─ index.php
+│  ├─ scripts
+│  │  ├─ bmi-calculator.js
+│  │  ├─ contact.js
+│  │  ├─ exercises.js
+│  │  └─ header.js
+│  ├─ services.php
+│  └─ styles
+│     ├─ about.css
+│     ├─ bmi-calculator.css
+│     ├─ contact.css
+│     ├─ exercises.css
+│     ├─ footer.css
+│     ├─ globals.css
+│     ├─ header.css
+│     └─ index.css
+└─ routes.php
+
+```
+
 # Steps to Run
 ```
 php -S localhost:5501 -t public routes.php

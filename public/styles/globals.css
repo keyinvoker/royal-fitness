@@ -1,13 +1,13 @@
 /* Base Styles */
 :root {
     --primary-color: #FF6B6B;
+    --primary-color-dark: #d54e4e;
     --secondary-color: #4ECDC4;
     --accent-color: #FFE66D;
     --dark-color: #2D3436;
     --text-color: #636E72;
     --light-bg: #F5F5F5;
     --white-color: #FFFFFF;
-    --text-color: #fff;
     --muted-color: #666;
     --card-bg: #1a1a1a;
     --transition: all 0.3s ease;

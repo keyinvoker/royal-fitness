@@ -42,6 +42,10 @@ switch ($request) {
         require "$publicPath/pricing.php";
         break;
 
+    case '/trainers':
+        require "$publicPath/trainers.php";
+        break;
+
     default:
         http_response_code(404);
         echo "404 Not Found";

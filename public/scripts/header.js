@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (navToggle) {
         navToggle.addEventListener('click', () => {
+            console.log(`>> navToggle :: clicked!`);
             navMenu.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (navClose) {
         navClose.addEventListener('click', () => {
+            console.log(`>> navclose :: clicked!`);
             navMenu.classList.remove('active');
             document.body.style.overflow = 'auto';
         });

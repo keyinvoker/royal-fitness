@@ -1,0 +1,57 @@
+.about-us-title {
+    font-size: 2em;
+    font-weight: normal;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.about-us-title-brand {
+    font-weight: bold;
+}
+
+.about-us-title-brand span {
+    color: var(--primary-color);
+}
+
+.about-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.about-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}

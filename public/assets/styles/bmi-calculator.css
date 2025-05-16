@@ -1,0 +1,75 @@
+.bmi {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+}
+
+.bmi-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.bmi-form {
+    padding: 2.5rem;
+    border-radius: 1em;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/bodybuilding-illustration.jpg');
+    background-color: rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.bmi .form-group {
+    width: 80%;
+}
+
+.bmi-info {
+    margin-top: 3rem;
+}
+
+.bmi-info h3 {
+    color: var(--dark-color);
+}
+
+.bmi-btn {
+    width: 40%;
+    background: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+.bmi-btn:hover {
+    background: #3BAFA8;
+}
+
+.bmi-categories {
+    list-style: none;
+    /* background: var(--white-color); */
+    background: radial-gradient(circle at center, var(--dark-color), #860808);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bmi-categories li {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.bmi-categories .underweight { background: #f8f9fa; }
+.bmi-categories .normal { background: #e3fcef; }
+.bmi-categories .overweight { background: #fff3e0; }
+.bmi-categories .obese { background: #ffeef0; }
+
+@media (max-width: 768px) {
+    .bmi-container .grid {
+        grid-template-columns: 1fr;
+    }
+}

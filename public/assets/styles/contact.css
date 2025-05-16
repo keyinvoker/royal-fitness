@@ -1,0 +1,117 @@
+/* Contact Section */
+.contact {
+    background:
+        linear-gradient(rgba(45,52,54,0.8),
+        rgba(45,52,54,0.8)),
+        url('/assets/images/contact-us-banner.jpg') center/cover fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    /* background: rgba(235, 235, 235, 0.4); */
+    background: var(--dark-color);
+    padding: 2.5rem;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.contact-form::after, .contact-form::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: conic-gradient(
+        from var(--angle),
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095,
+        #ff4545
+    );
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    animation: spin 3s linear infinite;
+}
+
+.contact-form::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+.contact-form, .contact-form::after, .contact-form::before {
+    border-radius: 40px;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.contact-form-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contact-form-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.contact-form-input::placeholder {
+    color: whitesmoke;
+}
+
+.contact-form-input:focus::placeholder {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.contact .section-title {
+    color: whitesmoke;
+}
+
+.contact-btn {
+    transition: var(--transition);
+}
+
+.contact-btn:hover {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}

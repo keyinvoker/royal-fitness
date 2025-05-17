@@ -10,9 +10,10 @@ return new class extends Migration
     {
         Schema::create('equipments', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
             $table->string('name');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
         });
     }
 

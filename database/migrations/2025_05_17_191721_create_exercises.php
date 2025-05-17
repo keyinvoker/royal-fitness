@@ -10,14 +10,15 @@ return new class extends Migration
     {
         Schema::create('exercises', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
             $table->string('name');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('video_url');
             $table->integer('duration_minutes');
-            $table->integer('equipment_id');
+            $table->unsignedBigInteger('equipment_id');
             $table->foreign('equipment_id')->references('id')->on('equipments');
-            $table->integer('type_id');
+            $table->unsignedBigInteger('type_id');
             $table->foreign('type_id')->references('id')->on('exercise_types');
         });
     }

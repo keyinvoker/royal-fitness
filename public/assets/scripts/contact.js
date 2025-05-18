@@ -1,33 +1,24 @@
-// Contact Form Submission
-document.getElementById('contact-form').addEventListener('submit', async (e) => {
+document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    const formData = new FormData(e.target);
-    const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        message: formData.get('message')
-    };
 
-    try {
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        showNotification('Message sent successfully! We will respond shortly.', 'success');
-        e.target.reset();
-    } catch (error) {
-        showNotification('Failed to send message. Please try again.', 'error');
+    const formData = new FormData(this);
+
+    for (const [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
     }
-});
 
-function showNotification(message, type) {
-    const notification = document.createElement('div');
-    notification.className = `notification ${type}`;
-    notification.textContent = message;
-    
-    document.body.appendChild(notification);
-    
-    setTimeout(() => {
-        notification.remove();
-    }, 3000);
-}
+    formData.append('service_id', emailJsServiceId);
+    formData.append('template_id', emailJsTemplateId);
+    formData.append('user_id', emailJsPublicKey);
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(() => {
+        alert('Your mail is sent!');
+    })
+    .catch(error => {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+});

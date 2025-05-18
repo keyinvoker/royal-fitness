@@ -97,4 +97,11 @@ body {
   font-weight: bold;
   display: block;
   margin-top: auto;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px rgba(255, 98, 98, 0.8);
+  background-color: brown;
+  color: whitesmoke;
 }

@@ -4,29 +4,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('nav-toggle');
     const navClose = document.getElementById('nav-close');
 
-    if (navToggle) {
+    if (navToggle && navMenu && navClose) {
         navToggle.addEventListener('click', () => {
             console.log(`>> navToggle :: clicked!`);
             navMenu.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
-    }
 
-    if (navClose) {
         navClose.addEventListener('click', () => {
             console.log(`>> navclose :: clicked!`);
             navMenu.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
+
+        // Close menu on outside click
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
     }
 
-    // Close menu on outside click
-    document.addEventListener('click', (e) => {
-        if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-            navMenu.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
+    if (navClose) {
+    }
 
     // Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -37,14 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 behavior: 'smooth',
                 block: 'start'
             });
-        });
-    });
-
-    // Close mobile menu on link click
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            document.body.style.overflow = 'auto';
         });
     });
 });
